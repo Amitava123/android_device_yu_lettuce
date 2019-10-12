@@ -20,12 +20,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lettuce device
 $(call inherit-product, device/yu/lettuce/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common ArrowOS stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := lettuce
-PRODUCT_NAME := lineage_lettuce
+PRODUCT_NAME := arrow_lettuce
 PRODUCT_BRAND := YU
 PRODUCT_MODEL := YU5010
 PRODUCT_MANUFACTURER := YU
