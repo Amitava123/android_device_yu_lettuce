@@ -1,0 +1,6 @@
+allow init-qcom-devstart-sh sysfs_boot_adsp:file write;
+allow init-qcom-devstart-sh sysfs_boot_adsp:file open;
+allow init-qcom-devstart-sh firmware_file:dir search;
+allow init-qcom-devstart-sh firmware_file:file read;
+allow init-qcom-devstart-sh firmware_file:file open;
+allow init-qcom-devstart-sh firmware_file:file getattr;
