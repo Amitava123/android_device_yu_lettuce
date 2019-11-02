@@ -1,6 +1,6 @@
 [
   {
-    "repository": "android_vendor_yu",
+    "repository": "android_vendor_yu_lettuce",
     "target_path": "vendor/yu"
   },
   {
