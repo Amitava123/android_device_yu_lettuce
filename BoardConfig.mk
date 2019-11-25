@@ -156,9 +156,9 @@ BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET := 0x02000000
 LZMA_RAMDISK_TARGETS := recovery
 
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/linux-x86/aarch64/aarch64-opt-linux-android/bin
-TARGET_KERNEL_CONFIG := reborn_lettuce_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-opt-linux-android-
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+TARGET_KERNEL_CONFIG := lineageos_lettuce_defconfig
 TARGET_KERNEL_SOURCE := kernel/cyanogen/msm8916
 
 # Lights
@@ -201,8 +201,7 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_cm
 TARGET_DISABLE_OTA_ASSERT := true
 
 # SDClang
-TARGET_USE_SDCLANG := false
-SDCLANG := false
+TARGET_USE_SDCLANG := true
 
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk
